@@ -1,0 +1,8 @@
+#Save this text into you Docker File
+FROM ubuntu
+
+RUN apt-get update && \
+    apt-get install -y python3-pip && \
+    pip3 install boto3
+
+ENTRYPOINT ["/bin/bash"]
